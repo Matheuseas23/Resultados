@@ -16,7 +16,8 @@
     --reacao-bg: #FF5555;
     --memoria-bg: #FFB21E;
     --verbal-bg: #00BBB8;
-    --visual-bg: #1125D6
+    --visual-bg: #1125D6;
+    --very-light-blue: #ECF2FF;
 }
 
 body {
@@ -62,6 +63,7 @@ body {
 .Resultado h2 {
     font-size: 2.4rem;
     margin-bottom: 1rem;
+
 }
 
 .Resultado p {
@@ -71,13 +73,15 @@ body {
 }
 
 .Resumo {
-    padding: 2.4rem 3.2rem;
+    padding: 3.8rem 4rem;
+    background: var(--write);
+
 }
 
 .Resumo h2 {
     color: var(--dark-navy);
     font-size: 1.8rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .Resumo > div {
@@ -132,5 +136,55 @@ body {
     padding-block: 1.6rem;
     border-radius: 12.8rem;
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 700git ;
+}
+
+@media (min-width: 736px) {
+    body {
+        min-height: 100svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1FR 1FR;
+        width: 736px;
+        background: var(--write);
+        border-radius: 3.2rem 0 0 3.2rem;
+    }
+    .Resultado {
+        padding-block: 3.8rem;
+        border-radius: 3.6rem;
+    }
+
+   .Resultado h1 {
+    font-size: 2.4rem;
+    margin-bottom: 3.6rem;
+   }
+   
+   .Resultado div {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2.8rem;
+   }
+
+   .Resultado div :nth-of-type(1) {
+    font-size: 7.2rem;
+   }
+
+   .Resultado strong :nth-of-type(2){
+    font-size: 1.8rem;
+   }
+
+   .Resultado h2 {
+    font-size: 3.2rem;
+    margin-bottom: 1.6rem;
+   }
+
+   .Resultado p {
+    font-size: 1.8rem
+   }
+   
 }
