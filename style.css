@@ -12,6 +12,11 @@
     --write: #FFF;
     --light-blue: #CAC9FF;
     --dark-navy: #303859;
+    --resumo-div-bg: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
+    --reacao-bg: #FF5555;
+    --memoria-bg: #FFB21E;
+    --verbal-bg: #00BBB8;
+    --visual-bg: #1125D6
 }
 
 body {
@@ -78,4 +83,34 @@ body {
 .Resumo > div {
     display: flex;
     justify-content: space-between;
+    padding: 1.6rem;
+    border-radius: 1.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.Resumo > div div {
+    display: flex;
+    align-items: center;
+    GAP: 1.2rem;
+
+}
+
+.resumo_reacao {
+    background: var(--reacao-bg) var(--resumo-div-bg);
+    color: var(--reacao-bg);
+}
+
+.resumo_memoria {
+    background: var(--memoria-bg) var(--resumo-div-bg);
+    color: var(--memoria-bg);
+}
+
+.resumo_verbal {
+    background: var(--verbal-bg) var(--resumo-div-bg);
+    color: var(--verbal-bg);
+}
+
+.resumo_visual{
+    background: var(--visual-bg) var(--resumo-div-bg);
+    color: var(--visual-bg);
 }
