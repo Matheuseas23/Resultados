@@ -75,7 +75,7 @@ body {
 .Resumo {
     padding: 3.8rem 4rem;
     background: var(--write);
-
+    border-radius: 3.2rem;
 }
 
 .Resumo h2 {
@@ -137,6 +137,8 @@ body {
     border-radius: 12.8rem;
     font-size: 1.8rem;
     font-weight: 700git ;
+    margin-top: 2.4rem;
+
 }
 
 @media (min-width: 736px) {
@@ -152,7 +154,7 @@ body {
         grid-template-columns: 1FR 1FR;
         width: 736px;
         background: var(--write);
-        border-radius: 3.2rem 0 0 3.2rem;
+        border-radius: 3.2rem;
     }
     .Resultado {
         padding-block: 3.8rem;
@@ -185,6 +187,18 @@ body {
 
    .Resultado p {
     font-size: 1.8rem
+   } 
+
+
+   .Resumo div {
+    font-size: 1.8rem;
    }
+
+   .Resumo button:hover {
+    background: var(--resultado-bg);
+    cursor: pointer;
+    
+   }
+
    
 }
